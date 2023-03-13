@@ -1,70 +1,18 @@
-/*
-	Striped by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+jQuery(document).ready(function($) {
 
-(function($) {
 
-	var	$window = $(window),
-		$body = $('body'),
-		$document = $(document);
+	var mastheadheight = $('.ds-header').outerHeight();
+	//console.log(mastheadheight);
+	$(".ds-banner,.ds-main-section").css("margin-top" , mastheadheight);
 
-	// Breakpoints.
-		breakpoints({
-			desktop:   [ '737px',   null     ],
-			wide:      [ '1201px',  null     ],
-			narrow:    [ '737px',   '1200px' ],
-			narrower:  [ '737px',   '1000px' ],
-			mobile:    [ null,      '736px'  ]
-		});
+	$(window).scroll(function(){
+	    if ($(window).scrollTop() >= 10) {
+	        $('.ds-header').addClass('ds-fixed-header');
+	    }
+	    else {
+	        $('.ds-header').removeClass('ds-fixed-header');
+	    }
+	}).scroll();
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
 
-	// Nav.
-
-		// Height hack.
-		/*
-			var $sc = $('#sidebar, #content'), tid;
-
-			$window
-				.on('resize', function() {
-					window.clearTimeout(tid);
-					tid = window.setTimeout(function() {
-						$sc.css('min-height', $document.height());
-					}, 100);
-				})
-				.on('load', function() {
-					$window.trigger('resize');
-				})
-				.trigger('resize');
-		*/
-
-		// Title Bar.
-			$(
-				'<div id="titleBar">' +
-					'<a href="#sidebar" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
-
-		// Sidebar
-			$('#sidebar')
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'sidebar-visible'
-				});
-
-})(jQuery);
+});
