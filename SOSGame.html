@@ -60,16 +60,33 @@
                           <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                               <p>This was an individual project for the UMKC course Foundation of Software Engineering. The project was completed over 6 sprints throughout the semester.</p>
 
-                              <p>I learned these skills through doing this project...</p>
+                              <p>I learned these skills through doing this project:</p>
+                              <ul>
+                              <li>Object-oriented programming: Familiarity with object-oriented programming concepts, including classes, objects, inheritance, and polymorphism.</li>
+                              <li>Version control: Proficiency in using version control systems like Git to manage source code and collaborate with other developers.</li>
+                                <li>Debugging and problem-solving: Ability to troubleshoot and resolve software issues using debugging tools and techniques.</li>
+                                <li>Software design principles: Understanding of software design principles, such as modularity, abstraction, encapsulation, and separation of concerns.</li>
+                                <li>Code quality: Knowledge of best practices for writing clean, maintainable, and efficient code, including addressing code smells and adhering to coding standards.</li>
+                                <li>Testing: Familiarity with software testing techniques and methodologies, such as unit testing, integration testing, and test-driven development (TDD).</li>
+                                <li>Development methodologies: Exposure to various software development methodologies, such as Agile</li>
+                                <li>Basic project management: Understanding of project planning, requirements gathering, and time estimation techniques.</li>
+                              </ul>
 
                               <h2>Implementation Details</h2>
-                              <p>Phasellus non faucibus purus, a venenatis diam. In faucibus orci mauris, porttitor egestas diam elementum non. Vestibulum non metus tempus, sagittis libero sed, euismod purus. Cras dolor nulla, hendrerit vitae libero eu, finibus ultricies dolor. Vestibulum non metus tempus, sagittis libero sed, euismod purus. Cras dolor nulla, hendrerit vitae libero eu, finibus ultricies dolor.</p>
+                              <p>The given Python code implements a tkinter-based SOS game with two game modes: "Simple Game" (Player vs Player) and "General Game" (Player vs Computer). The implementation details are as follows:</p>
 
-                              <ul>
-                                <li>Phasellus non faucibus purus, a venenatis diam. In faucibus orci mauris, porttitor egestas diam elementum non.</li>
-                                 <li>Vestibulum non metus tempus, sagittis libero sed, euismod purus.</li>
-                                 <li>Vestibulum non metus tempus, sagittis libero sed, euismod purus. Cras dolor nulla, hendrerit vitae libero eu, finibus ultricies dolor. Vestibulum non metus tempus.</li>
-                              </ul>
+                                <ul>
+                                  <li>The program imports the necessary libraries and modules, such as tkinter, messagebox, random, and a custom module called SOSAlgos.</li>
+                                  <li>The <code>SimpleBoard</code> class represents the simple game mode, where two players take turns placing "S" or "O" on the game board. It initializes the game board, keeps track of scores, and implements the game logic.</li>
+                                  <li>The <code>GeneralGame</code> class inherits from <code>SimpleBoard</code> and represents the general game mode, where a player competes against the computer. It overrides the <code>click</code> method to include the AI's move after each player move.</li>
+                                  <li>The <code>App</code> class represents the main application window and menu. It includes the game board, selection of game modes, and displays scores and turn information. It also has methods to show the menu for each game mode and create a new game board based on the selected game mode.</li>
+                                  <li>The <code>createBoard</code> method in the <code>App</code> class is responsible for initializing a new game board of the selected game mode and board size. It creates an instance of either <code>SimpleBoard</code> or <code>GeneralGame</code> based on the user's selection.</li>
+                                  <li>The <code>showSimple</code> and <code>showGeneral</code> methods in the <code>App</code> class display the menu options for each game mode. These options include the choice of "S" or "O" for each player in the simple game mode and the choice of "S" or "O" for the player in the general game mode.</li>
+                                  <li>The program creates a tkinter window and initializes the <code>App</code> class with the window as a parameter. The main tkinter event loop is then started.</li>
+                                </ul>
+
+                              <p>In summary, the program creates a tkinter-based SOS game with both player vs player and player vs computer game modes. The user can choose the game mode and board size, and the game tracks scores and turns throughout the gameplay.</p>
+
                           </div>
                       </div>
                   </div>
