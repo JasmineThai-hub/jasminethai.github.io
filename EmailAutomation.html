@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Google Fots -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      <!-- Remixicon Icon -->
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <!-- Main CSS -->
+      <link href="assets/css/main.css" rel="stylesheet">
+
+
+    <title>Jasmine Thai</title>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header class="ds-header" id="site-header">
+        <div class="container">
+            <div class="ds-header-inner">
+              <!-- logo -->
+              <a href="index.html" class="ds-logo">
+                <span>J</span>Jasmine Thai
+              </a>
+              <!-- logo -->
+              <!-- social -->
+              <ul class="ds-social">
+                <li><a href="https://github.com/JasmineThai-hub/SOSGame" target="_blank"><i class="ri-github-fill"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jasmine-thai-29426b200/" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
+              </ul>
+              <!-- social -->
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+   <main class="ds-main-section">
+     <div class="container">
+        <div class="ds-work-details-section">
+            <div class="text-center">
+              <a href="index.html" class="ds-button ds-arrow-button"><i class="ri-arrow-left-s-line"></i> BAck</a>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
+                  <header class="ds-work-det-hed">
+                      <h1 class="ds-work-det-title">Email Automation</h1>
+                      <span class="ds-work-det-dep">Work Automation - 2022</span>
+                  </header>
+                  <figure><img src="assets/images/outlookbanner.jpg"></figure>
+                  <div class="ds-work-content-sec">
+                      <div class="row justify-content-center">
+                          <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                              <p>
+                                This Python script automates the process of sending Outlook emails based on specific flagged criteria from an input Excel file. It uses the <code>pandas</code> library for handling Excel data, the <code>openpyxl</code> library for reading Excel files, and the <code>pywin32</code> library for interacting with Outlook.
+                            </p>
+                            <ol>
+                                <li>Import the required libraries: <code>pandas</code>, <code>openpyxl</code>, and <code>win32com.client</code>.</li>
+                                <li>Read the input Excel file using <code>pandas.read_excel()</code>, specifying the <code>openpyxl</code> engine to handle the file. This will load the Excel data into a pandas DataFrame.</li>
+                                <li>Filter the DataFrame to extract rows that meet the flagged criteria. This can be done using boolean indexing or the <code>query()</code> method available in pandas.</li>
+                                <li>For each row that meets the criteria, extract the necessary information, such as the recipient's email address, subject, and email body content.</li>
+                                <li>Establish a connection to Outlook by creating an instance of the <code>win32com.client.Dispatch("Outlook.Application")</code> object.</li>
+                                <li>For each recipient, create a new mail item using the <code>CreateItem()</code> method of the Outlook application object, and populate the email fields (such as <code>To</code>, <code>Subject</code>, and <code>Body</code>) with the extracted information.</li>
+                                <li>Send the email using the <code>Send()</code> method of the mail item.</li>
+                                <li>Close the Outlook connection and provide a summary of the emails sent, if needed.</li>
+                            </ol>
+                            <p>
+                                This Python script streamlines the process of sending personalized emails based on specific criteria from an input Excel file, making it an efficient solution for automated email campaigns or notifications.
+                            </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+     </div>
+   </main>
+
+   <!--  footer -->
+   <footer class="ds-footer text-center">
+     <div class="container">
+        <section>
+          <span>Stay in touch</span>
+          <h4>Ready to talk?</h4>
+          <p>Feel free to contact us</p>
+          <a href="mailto:test@test.com" class="ds-button">Lets Talk</a>
+        </section>
+        <span class="ds-copyright">© 2022 All rights reserved. Free minimal bootstrap template by <a href="https://designstub.com/" target="_blank">Designstub</a>.</span>
+     </div>
+   </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    <script src="assets/js/main.js"></script>
+  </body>
