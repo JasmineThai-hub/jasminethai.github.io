@@ -51,28 +51,21 @@
             <div class="row justify-content-center">
               <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
                   <header class="ds-work-det-hed">
-                      <h1 class="ds-work-det-title">Email Automation</h1>
-                      <span class="ds-work-det-dep">Work Automation - 2022</span>
+                      <h1 class="ds-work-det-title">Remedy BMC Automation</h1>
+                      <span class="ds-work-det-dep">Web Automation - 2023</span>
                   </header>
-                  <figure><img src="assets/images/outlookbanner.jpg"></figure>
+                  <figure><img src="assets/images/SOSBanner.png"></figure>
                   <div class="ds-work-content-sec">
                       <div class="row justify-content-center">
                           <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
                               <p>
-                                The Python script automates the process of sending Outlook emails based on specific flagged criteria from an input Excel file. It uses the <code>pandas</code> library for handling Excel data, the <code>openpyxl</code> library for reading Excel files, and the <code>pywin32</code> library for interacting with Outlook.
+                                This project demonstrates the successful application of a Python script to automate a workflow in Remedy BMC using the Selenium WebDriver. The goal of the project was to increase efficiency and reduce manual effort in managing the Remedy BMC platform.
                             </p>
-                              <ul>
-                            <li>Import the required libraries: <code>pandas</code>, <code>openpyxl</code>, and <code>win32com.client</code>.</li>
-                            <li>Read the input Excel file using <code>pandas.read_excel()</code>, specifying the <code>openpyxl</code> engine to handle the file. This will load the Excel data into a pandas DataFrame.</li>
-                            <li>Filter the DataFrame to extract rows that meet the flagged criteria. This can be done using boolean indexing or the <code>query()</code> method available in pandas.</li>
-                            <li>For each row that meets the criteria, extract the necessary information, such as the recipient's email address, subject, and email body content.</li>
-                            <li>Establish a connection to Outlook by creating an instance of the <code>win32com.client.Dispatch("Outlook.Application")</code> object.</li>
-                            <li>For each recipient, create a new mail item using the <code>CreateItem()</code> method of the Outlook application object, and populate the email fields (such as <code>To</code>, <code>Subject</code>, and <code>Body</code>) with the extracted information.</li>
-                            <li>Send the email using the <code>Send()</code> method of the mail item.</li>
-                            <li>Close the Outlook connection and provide a summary of the emails sent, if needed.</li>
+                            <ul>
+                                <li>Developed a Python script leveraging Selenium WebDriver to interact with Remedy BMC's web interface and automate repetitive tasks, streamlining the workflow process.</li>
                             </ul>
-                                  <p>
-                                This Python script streamlines the process of sending personalized emails based on specific criteria from an input Excel file, making it an efficient solution for automated email notifications.
+                            <p>
+                                This project showcases the ability to create custom automation solutions using Python and Selenium, reducing time spent on manual tasks and improving overall efficiency within Remedy BMC workflows.
                             </p>
                           </div>
                       </div>
@@ -108,3 +101,4 @@
     -->
     <script src="assets/js/main.js"></script>
   </body>
+</html>
